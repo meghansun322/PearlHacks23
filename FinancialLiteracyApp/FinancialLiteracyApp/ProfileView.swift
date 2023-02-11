@@ -14,34 +14,40 @@ struct BlueButton: ButtonStyle {
             .background(Color("app-blue"))
             .foregroundColor(.white)
             .clipShape(Capsule())
+            .shadow(color: .gray, radius: 5, x: -1, y: 3)
     }
 }
 
 struct ProfileView: View {
     var body: some View {
             NavigationStack{
-                VStack (spacing: 25){
+                VStack (spacing: 10){
                     Divider()
                     HStack{
                         Text("Meghan Sun").font(.title)
                         Spacer()
-                        Text("57 points").font(.title2)
+                        Text("🔥57 points").font(.title2)
                     }
-                    Image("Meghan").resizable().scaledToFit().clipShape(Circle())
-    
+                    HStack{
+                        Text("@meghansun322")
+                        Spacer()
+                    }
+                    VStack (spacing: 25){
+                    Image("Meghan").resizable().scaledToFit().clipShape(Circle()).shadow(color: Color("app-blue"), radius: 5, x: -2, y: 5)
+                    
                     VStack (alignment: .leading) {
-                        Text("Hi! I go to UNC and I'm currently interested in learning about personal finance, investing, and the financial literacy knowledge gap.")
+                        Text("Hi! 👋 I go to UNC and I'm currently interested in learning about personal finance, investing, and the financial literacy knowledge gap.")
                     }
                     Spacer()
                     Button("Edit Profile") {
                         // switch to edit profile view here
                     }
                     .buttonStyle(BlueButton())
-                        
+                }
 
                     
                 }
-                .navigationTitle("My Profile")
+                .navigationTitle("👤My Profile")
                 .padding()
             }
         }
