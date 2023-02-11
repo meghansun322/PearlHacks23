@@ -1,5 +1,5 @@
 //
-//  FinancialLiteracyAppApp.swift
+//  FinancialLiteracyApp.swift
 //  FinancialLiteracyApp
 //
 //  Created by Meghan Sun on 2/11/23.
