@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		240661752998353400976D8F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240661742998353400976D8F /* Model.swift */; };
+		2406617929983E2200976D8F /* MessageRepliesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2406617829983E2200976D8F /* MessageRepliesView.swift */; };
+		2406617B2998478A00976D8F /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2406617A2998478A00976D8F /* MessageView.swift */; };
 		243ABF1229980E09007016A2 /* FinancialLiteracyAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243ABF1129980E09007016A2 /* FinancialLiteracyAppApp.swift */; };
 		243ABF1429980E09007016A2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243ABF1329980E09007016A2 /* ContentView.swift */; };
 		243ABF1629980E0C007016A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 243ABF1529980E0C007016A2 /* Assets.xcassets */; };
@@ -15,9 +18,13 @@
 		243ABF58299814BE007016A2 /* BudgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243ABF57299814BE007016A2 /* BudgetView.swift */; };
 		243ABF5A299814D2007016A2 /* ResourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243ABF59299814D2007016A2 /* ResourcesView.swift */; };
 		243ABF5C299814DB007016A2 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243ABF5B299814DB007016A2 /* ProfileView.swift */; };
+		243ABF5E2998204E007016A2 /* ForumChannelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243ABF5D2998204E007016A2 /* ForumChannelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		240661742998353400976D8F /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		2406617829983E2200976D8F /* MessageRepliesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRepliesView.swift; sourceTree = "<group>"; };
+		2406617A2998478A00976D8F /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		243ABF0E29980E09007016A2 /* FinancialLiteracyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinancialLiteracyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		243ABF1129980E09007016A2 /* FinancialLiteracyAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancialLiteracyAppApp.swift; sourceTree = "<group>"; };
 		243ABF1329980E09007016A2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -27,6 +34,7 @@
 		243ABF57299814BE007016A2 /* BudgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetView.swift; sourceTree = "<group>"; };
 		243ABF59299814D2007016A2 /* ResourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesView.swift; sourceTree = "<group>"; };
 		243ABF5B299814DB007016A2 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		243ABF5D2998204E007016A2 /* ForumChannelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumChannelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +48,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2406617C299847E000976D8F /* Forum */ = {
+			isa = PBXGroup;
+			children = (
+				243ABF55299814AC007016A2 /* ForumView.swift */,
+				243ABF5D2998204E007016A2 /* ForumChannelView.swift */,
+				2406617829983E2200976D8F /* MessageRepliesView.swift */,
+				2406617A2998478A00976D8F /* MessageView.swift */,
+			);
+			path = Forum;
+			sourceTree = "<group>";
+		};
 		243ABF0529980E09007016A2 = {
 			isa = PBXGroup;
 			children = (
@@ -59,9 +78,10 @@
 		243ABF1029980E09007016A2 /* FinancialLiteracyApp */ = {
 			isa = PBXGroup;
 			children = (
+				2406617C299847E000976D8F /* Forum */,
 				243ABF1129980E09007016A2 /* FinancialLiteracyAppApp.swift */,
 				243ABF1329980E09007016A2 /* ContentView.swift */,
-				243ABF55299814AC007016A2 /* ForumView.swift */,
+				240661742998353400976D8F /* Model.swift */,
 				243ABF57299814BE007016A2 /* BudgetView.swift */,
 				243ABF59299814D2007016A2 /* ResourcesView.swift */,
 				243ABF5B299814DB007016A2 /* ProfileView.swift */,
@@ -153,8 +173,12 @@
 				243ABF58299814BE007016A2 /* BudgetView.swift in Sources */,
 				243ABF56299814AC007016A2 /* ForumView.swift in Sources */,
 				243ABF1229980E09007016A2 /* FinancialLiteracyAppApp.swift in Sources */,
+				2406617929983E2200976D8F /* MessageRepliesView.swift in Sources */,
+				2406617B2998478A00976D8F /* MessageView.swift in Sources */,
+				243ABF5E2998204E007016A2 /* ForumChannelView.swift in Sources */,
 				243ABF5C299814DB007016A2 /* ProfileView.swift in Sources */,
 				243ABF5A299814D2007016A2 /* ResourcesView.swift in Sources */,
+				240661752998353400976D8F /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +309,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"FinancialLiteracyApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "College Wallet";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -313,6 +338,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"FinancialLiteracyApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "College Wallet";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
