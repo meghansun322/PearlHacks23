@@ -16,7 +16,6 @@ struct ResourcesView: View {
                 Image("nerdwallet")
                     .resizable()
                     .scaledToFit()
-                
             }
         }
             
