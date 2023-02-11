@@ -19,42 +19,54 @@ struct BlueButton: ButtonStyle {
 }
 
 struct ProfileView: View {
+    @State private var showingSheet = false
     var body: some View {
-            NavigationStack{
-                VStack (spacing: 10){
-                    Divider()
-                    HStack{
-                        Text("Meghan Sun").font(.title)
-                        Spacer()
-                        Text("🔥57 points").font(.title2)
-                    }
-                    HStack{
-                        Text("@meghansun322")
-                        Spacer()
-                    }
-                    VStack (spacing: 25){
+        NavigationStack{
+            VStack (spacing: 10){
+                Divider()
+                HStack{
+                    Text("Meghan Sun").font(.title)
+                    Spacer()
+                    Text("🔥57 points").font(.title2)
+                }
+                HStack{
+                    Text("@meghansun322")
+                    Spacer()
+                }
+                VStack (spacing: 25){
                     Image("Meghan").resizable().scaledToFit().clipShape(Circle()).shadow(color: Color("app-blue"), radius: 5, x: -2, y: 5)
                     
                     VStack (alignment: .leading) {
                         Text("Hi! 👋 I go to UNC and I'm currently interested in learning about personal finance, investing, and the financial literacy knowledge gap.")
                     }
                     Spacer()
-                    Button("Edit Profile") {
-                        // switch to edit profile view here
+                    Button {
+                        showingSheet.toggle()
+                    } label: {
+                        Text("Edit Profile")
                     }
-                    .buttonStyle(BlueButton())
-                }
-
+                    .padding()
                     
                 }
-                .navigationTitle("👤My Profile")
-                .padding()
+                
+                .sheet(isPresented: $showingSheet) {
+                    NewPostView()
+                }
             }
+            .buttonStyle(BlueButton())
+            .navigationTitle("👤My Profile")
+            .padding()
+            
         }
-}
-
-struct ProfileView_Previews: PreviewProvider {
-    static var previews: some View {
-        ProfileView()
+        
+        
+        
+    }
+    
+    
+    struct ProfileView_Previews: PreviewProvider {
+        static var previews: some View {
+            ProfileView()
+        }
     }
 }
