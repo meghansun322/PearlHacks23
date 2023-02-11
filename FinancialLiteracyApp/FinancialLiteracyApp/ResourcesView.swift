@@ -9,7 +9,18 @@ import SwiftUI
 
 struct ResourcesView: View {
     var body: some View {
-        Text("Resources View")
+        NavigationStack {
+            Text("")
+                .navigationTitle("Resources")
+            HStack(){
+                Image("nerdwallet")
+                    .resizable()
+                    .scaledToFit()
+                
+            }
+        }
+            
+        
     }
 }
 
