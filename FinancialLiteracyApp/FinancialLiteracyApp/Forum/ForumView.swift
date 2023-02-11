@@ -9,6 +9,7 @@ import SwiftUI
 
 // Displays the channels
 struct ForumView: View {
+    
     @State var searchQuery = ""
     var channels = ["budgeting", "investing", "general"]
     var body: some View {
@@ -41,6 +42,8 @@ struct ForumView: View {
                 }
   
                 Spacer()
+                
+              
             }
             .padding()
             .navigationTitle("Forum")
