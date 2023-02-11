@@ -10,6 +10,7 @@ import SwiftUI
 // shows the messages in the feed
 struct ForumChannelView: View {
     var name: String
+    @State private var showingSheet = false
   
     var body: some View {
         NavigationStack{
@@ -34,6 +35,21 @@ struct ForumChannelView: View {
                     }
 
                 }
+            Button {
+                showingSheet.toggle()
+            } label: {
+                HStack{
+                    Spacer()
+                    Image(systemName: "plus.circle.fill")
+                        .font(.system(size: 50))
+                }
+                .padding()
+                    
+            }
+            .sheet(isPresented: $showingSheet) {
+                        NewPostView()
+            }
+            
                 .navigationTitle(name.uppercased())
                 
             }

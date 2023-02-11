@@ -10,6 +10,7 @@
 		240661752998353400976D8F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240661742998353400976D8F /* Model.swift */; };
 		2406617929983E2200976D8F /* MessageRepliesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2406617829983E2200976D8F /* MessageRepliesView.swift */; };
 		2406617B2998478A00976D8F /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2406617A2998478A00976D8F /* MessageView.swift */; };
+		2406617E29984D6300976D8F /* NewPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2406617D29984D6300976D8F /* NewPostView.swift */; };
 		243ABF1229980E09007016A2 /* FinancialLiteracyAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243ABF1129980E09007016A2 /* FinancialLiteracyAppApp.swift */; };
 		243ABF1429980E09007016A2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243ABF1329980E09007016A2 /* ContentView.swift */; };
 		243ABF1629980E0C007016A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 243ABF1529980E0C007016A2 /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 		240661742998353400976D8F /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		2406617829983E2200976D8F /* MessageRepliesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRepliesView.swift; sourceTree = "<group>"; };
 		2406617A2998478A00976D8F /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		2406617D29984D6300976D8F /* NewPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostView.swift; sourceTree = "<group>"; };
 		243ABF0E29980E09007016A2 /* FinancialLiteracyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinancialLiteracyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		243ABF1129980E09007016A2 /* FinancialLiteracyAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancialLiteracyAppApp.swift; sourceTree = "<group>"; };
 		243ABF1329980E09007016A2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				243ABF55299814AC007016A2 /* ForumView.swift */,
+				2406617D29984D6300976D8F /* NewPostView.swift */,
 				243ABF5D2998204E007016A2 /* ForumChannelView.swift */,
 				2406617829983E2200976D8F /* MessageRepliesView.swift */,
 				2406617A2998478A00976D8F /* MessageView.swift */,
@@ -178,6 +181,7 @@
 				8B0B3CA329984FDE0043C972 /* EditProfileView.swift in Sources */,
 				243ABF1229980E09007016A2 /* FinancialLiteracyAppApp.swift in Sources */,
 				2406617929983E2200976D8F /* MessageRepliesView.swift in Sources */,
+				2406617E29984D6300976D8F /* NewPostView.swift in Sources */,
 				2406617B2998478A00976D8F /* MessageView.swift in Sources */,
 				243ABF5E2998204E007016A2 /* ForumChannelView.swift in Sources */,
 				243ABF5C299814DB007016A2 /* ProfileView.swift in Sources */,
