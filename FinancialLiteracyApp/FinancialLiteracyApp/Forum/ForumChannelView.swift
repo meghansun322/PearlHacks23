@@ -9,8 +9,8 @@ import SwiftUI
 
 // shows the messages in the feed
 struct ForumChannelView: View {
-    var name: String
     @State private var showingSheet = false
+    @ObservedObject var channel: ChannelViewModel
   
     var body: some View {
         NavigationStack{
@@ -18,7 +18,7 @@ struct ForumChannelView: View {
                 ScrollView {
                    
                     
-                    ForEach(Message.example_messages, id: \.self) { message in
+                    ForEach(channel.messages, id: \.self) { message in
                         VStack (alignment: .leading, spacing: 10) {
                             
                             MessageView(message: message)
@@ -47,10 +47,10 @@ struct ForumChannelView: View {
                     
             }
             .sheet(isPresented: $showingSheet) {
-                        NewPostView()
+                NewPostView(vm: channel, showingSheet: $showingSheet)
             }
             
-                .navigationTitle(name.uppercased())
+            .navigationTitle(channel.name.uppercased())
                 
             }
             
@@ -61,6 +61,6 @@ struct ForumChannelView: View {
 
 struct ForumChannelView_Previews: PreviewProvider {
     static var previews: some View {
-        ForumChannelView(name: "Investing")
+        ForumChannelView(channel: ChannelViewModel(channel: Channel.example))
     }
 }

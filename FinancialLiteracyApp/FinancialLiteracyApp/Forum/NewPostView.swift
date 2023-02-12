@@ -8,13 +8,41 @@
 import SwiftUI
 
 struct NewPostView: View {
+    
+    @Environment(\.dismiss) var dismiss
+    
+    @State var theMessage: String = ""
+    @ObservedObject var vm: ChannelViewModel
+    @Binding var showingSheet: Bool
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            Form {
+                Section {
+                    TextField("Type your message...", text: $theMessage,  axis: .vertical)
+                        .lineLimit(5...)
+                }
+                
+              
+                    Button {
+                        vm.addNewMessage(new: (Message(user: "money-meghan322", message: theMessage, upvote: 0, downvote: 0)))
+                        showingSheet = false
+                    } label: {
+                        Text("Post!")
+                    }
+                
+            }
+            .navigationBarTitle("Create a Post")
+        }
     }
+    
+    
+    
+    
 }
 
 struct NewPostView_Previews: PreviewProvider {
     static var previews: some View {
-        NewPostView()
+        NewPostView(vm: ChannelViewModel(channel: Channel.example), showingSheet: .constant(true))
     }
 }
