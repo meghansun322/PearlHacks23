@@ -30,7 +30,7 @@ struct ProfileView: View {
                     Text("🔥57 points").font(.title2)
                 }
                 HStack{
-                    Text("@meghansun322")
+                    Text("@money-meghan322")
                     Spacer()
                 }
                 VStack (spacing: 25){
@@ -50,7 +50,7 @@ struct ProfileView: View {
                 }
                 
                 .sheet(isPresented: $showingSheet) {
-                    NewPostView()
+                    EditProfileView()
                 }
             }
             .buttonStyle(BlueButton())
