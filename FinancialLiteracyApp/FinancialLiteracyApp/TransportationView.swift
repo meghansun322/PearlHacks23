@@ -24,23 +24,23 @@ struct TransportationView: View
                         
                         GroupBox {
                             DisclosureGroup("Gas") {
-                                HStack(spacing: 111){
+                                HStack(spacing: 120){
                                     Text("Total Projected Cost")
-                                    Text("$1,600")
+                                    Text("$120")
                                 }
                                 .font(.system(size: 20))
                                 .foregroundColor(Color(.black))
                                 
-                                HStack(spacing: 145){
+                                HStack(spacing: 150){
                                     Text("Total Actual Cost")
-                                    Text("$1,713")
+                                    Text("$127")
                                 }
                                 .font(.system(size: 20))
                                 .foregroundColor(Color(.black))
                                 
-                                HStack(spacing: 212){
+                                HStack(spacing: 217){
                                     Text("Difference")
-                                    Text("-$113")
+                                    Text("-$7")
                                 }
                                 .font(.system(size: 20))
                                 .foregroundColor(Color(.black))
@@ -53,23 +53,23 @@ struct TransportationView: View
                     
                         GroupBox {
                             DisclosureGroup("Maintenance") {
-                                HStack(spacing: 111){
+                                HStack(spacing: 135){
                                     Text("Total Projected Cost")
-                                    Text("$1,600")
+                                    Text("$30")
                                 }
                                 .font(.system(size: 20))
                                 .foregroundColor(Color(.black))
                                 
-                                HStack(spacing: 145){
+                                HStack(spacing: 165){
                                     Text("Total Actual Cost")
-                                    Text("$1,713")
+                                    Text("$28")
                                 }
                                 .font(.system(size: 20))
                                 .foregroundColor(Color(.black))
                                 
-                                HStack(spacing: 212){
+                                HStack(spacing: 225){
                                     Text("Difference")
-                                    Text("-$113")
+                                    Text("+$2")
                                 }
                                 .font(.system(size: 20))
                                 .foregroundColor(Color(.black))
@@ -82,23 +82,23 @@ struct TransportationView: View
                         
                         GroupBox {
                             DisclosureGroup("Other") {
-                                HStack(spacing: 111){
+                                HStack(spacing: 133){
                                     Text("Total Projected Cost")
-                                    Text("$1,600")
+                                    Text("$15")
                                 }
                                 .font(.system(size: 20))
                                 .foregroundColor(Color(.black))
                                 
-                                HStack(spacing: 145){
+                                HStack(spacing: 170){
                                     Text("Total Actual Cost")
-                                    Text("$1,713")
+                                    Text("$0")
                                 }
                                 .font(.system(size: 20))
                                 .foregroundColor(Color(.black))
                                 
-                                HStack(spacing: 212){
+                                HStack(spacing: 230){
                                     Text("Difference")
-                                    Text("-$113")
+                                    Text("$0")
                                 }
                                 .font(.system(size: 20))
                                 .foregroundColor(Color(.black))
@@ -116,22 +116,22 @@ struct TransportationView: View
                 
                 VStack {
                     
-                    HStack(spacing: 125)
+                    HStack(spacing: 140)
                     {
                         Text("Total Projected Cost")
-                        Text("$1,600")
+                        Text("$165")
                     }
                     
-                    HStack(spacing: 159)
+                    HStack(spacing: 170)
                     {
                         Text("Total Actual Cost")
-                        Text("$1,713")
+                        Text("$155")
                     }
                     
-                    HStack(spacing: 222)
+                    HStack(spacing: 227)
                     {
                         Text("Difference")
-                        Text("-$113")
+                        Text("+$10")
                     }
                 }.font(.system(size: 20))
                 
@@ -150,6 +150,7 @@ struct TransportationView: View
                                 .padding(.horizontal, 40)
                                 .background(Color("app-green"))
                                 .clipShape(Capsule())
+                                .shadow(color: .gray, radius: 5, x: -1, y: 3)
                     })
                 }
             }

@@ -24,23 +24,23 @@ struct GroceriesFoodView: View
                         
                         GroupBox {
                             DisclosureGroup("Groceries") {
-                                HStack(spacing: 111){
+                                HStack(spacing: 125){
                                     Text("Total Projected Cost")
-                                    Text("$1,600")
+                                    Text("$220")
                                 }
                                 .font(.system(size: 20))
                                 .foregroundColor(Color(.black))
                                 
-                                HStack(spacing: 145){
+                                HStack(spacing: 155){
                                     Text("Total Actual Cost")
-                                    Text("$1,713")
+                                    Text("$217")
                                 }
                                 .font(.system(size: 20))
                                 .foregroundColor(Color(.black))
                                 
-                                HStack(spacing: 212){
+                                HStack(spacing: 223){
                                     Text("Difference")
-                                    Text("-$113")
+                                    Text("+$3")
                                 }
                                 .font(.system(size: 20))
                                 .foregroundColor(Color(.black))
@@ -53,23 +53,23 @@ struct GroceriesFoodView: View
                     
                         GroupBox {
                             DisclosureGroup("Dining Out") {
-                                HStack(spacing: 111){
+                                HStack(spacing: 125){
                                     Text("Total Projected Cost")
-                                    Text("$1,600")
+                                    Text("$100")
                                 }
                                 .font(.system(size: 20))
                                 .foregroundColor(Color(.black))
                                 
-                                HStack(spacing: 145){
+                                HStack(spacing: 155){
                                     Text("Total Actual Cost")
-                                    Text("$1,713")
+                                    Text("$124")
                                 }
                                 .font(.system(size: 20))
                                 .foregroundColor(Color(.black))
                                 
-                                HStack(spacing: 212){
+                                HStack(spacing: 215){
                                     Text("Difference")
-                                    Text("-$113")
+                                    Text("-$24")
                                 }
                                 .font(.system(size: 20))
                                 .foregroundColor(Color(.black))
@@ -82,23 +82,23 @@ struct GroceriesFoodView: View
                         
                         GroupBox {
                             DisclosureGroup("Other") {
-                                HStack(spacing: 111){
+                                HStack(spacing: 137){
                                     Text("Total Projected Cost")
-                                    Text("$1,600")
+                                    Text("$15")
                                 }
                                 .font(.system(size: 20))
                                 .foregroundColor(Color(.black))
                                 
-                                HStack(spacing: 145){
+                                HStack(spacing: 175){
                                     Text("Total Actual Cost")
-                                    Text("$1,713")
+                                    Text("$5")
                                 }
                                 .font(.system(size: 20))
                                 .foregroundColor(Color(.black))
                                 
                                 HStack(spacing: 212){
                                     Text("Difference")
-                                    Text("-$113")
+                                    Text("+$10")
                                 }
                                 .font(.system(size: 20))
                                 .foregroundColor(Color(.black))
@@ -116,22 +116,22 @@ struct GroceriesFoodView: View
                 
                 VStack {
                     
-                    HStack(spacing: 125)
+                    HStack(spacing: 136)
                     {
                         Text("Total Projected Cost")
-                        Text("$1,600")
+                        Text("$335")
                     }
                     
-                    HStack(spacing: 159)
+                    HStack(spacing: 165)
                     {
                         Text("Total Actual Cost")
-                        Text("$1,713")
+                        Text("$346")
                     }
                     
-                    HStack(spacing: 222)
+                    HStack(spacing: 230)
                     {
                         Text("Difference")
-                        Text("-$113")
+                        Text("-$11")
                     }
                 }.font(.system(size: 20))
                 
@@ -150,6 +150,7 @@ struct GroceriesFoodView: View
                                 .padding(.horizontal, 40)
                                 .background(Color("app-green"))
                                 .clipShape(Capsule())
+                                .shadow(color: .gray, radius: 5, x: -1, y: 3)
                     })
                 }
             }

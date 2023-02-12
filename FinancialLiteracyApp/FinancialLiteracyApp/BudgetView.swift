@@ -14,6 +14,7 @@ struct GreenButton: ButtonStyle {
             .background(Color("app-green"))
             .foregroundColor(.white)
             .clipShape(Capsule())
+            .shadow(color: .gray, radius: 5, x: -1, y: 3)
     }
 }
 
@@ -34,27 +35,27 @@ struct BudgetView: View
                         .bold()
                         .underline()
                         .font(.system(size: 25))
-                    HStack(spacing: 125)
+                    HStack(spacing: 128)
                     {
                         Text("Total Projected Cost")
                         .font(.system(size: 20))
-                        Text("$1,600")
+                        Text("$1,555")
                         .font(.system(size: 20))
                     }
                     
-                    HStack(spacing: 159)
+                    HStack(spacing: 155)
                     {
                         Text("Total Actual Cost")
                         .font(.system(size: 20))
-                        Text("$1,713")
+                        Text("$1,493")
                         .font(.system(size: 20))
                     }
                     
-                    HStack(spacing: 222)
+                    HStack(spacing: 225)
                     {
                         Text("Difference")
                         .font(.system(size: 20))
-                        Text("-$113")
+                        Text("+$62")
                         .font(.system(size: 20))
                     }
                 }
@@ -62,7 +63,7 @@ struct BudgetView: View
                 HStack (spacing: 150)
                 {
                     
-                    Text("Housing - $850")
+                    Text("Housing - $852")
                     NavigationLink(destination: {HousingView()},
                        label: {
                             Text("Edit")
@@ -73,7 +74,7 @@ struct BudgetView: View
                 HStack (spacing: 89)
                 {
                     
-                    Text("Transportation - $120")
+                    Text("Transportation - $155")
                     NavigationLink(destination: {TransportationView()},
                        label: {
                             Text("Edit")
@@ -81,10 +82,10 @@ struct BudgetView: View
                     })
                 }.font(.system(size: 25))
                 
-                HStack (spacing: 80)
+                HStack (spacing: 78)
                 {
                     
-                    Text("Groceries/Food - $415")
+                    Text("Groceries/Food - $346")
                     NavigationLink(destination: {GroceriesFoodView()},
                        label: {
                             Text("Edit")
@@ -95,7 +96,7 @@ struct BudgetView: View
                 HStack (spacing: 185)
                 {
                     
-                    Text("Other - $215")
+                    Text("Other - $140")
                     NavigationLink(destination: {OtherView()},
                        label: {
                             Text("Edit")
