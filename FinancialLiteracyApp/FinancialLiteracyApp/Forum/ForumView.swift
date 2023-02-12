@@ -10,6 +10,8 @@ import SwiftUI
 // Displays the channels
 struct ForumView: View {
     
+    @StateObject var vm: ForumViewModel = ForumViewModel()
+    
     @State var searchQuery = ""
     var channels = ["budgeting", "investing", "general"]
     var body: some View {
@@ -24,14 +26,14 @@ struct ForumView: View {
                     .font(.title)
                 
                 Divider()
-                ForEach(channels, id: \.self) { channel in
+                ForEach(vm.channels, id: \.self) { channel in
                     // On click, changes view to ForumChannel View
                     NavigationLink {
-                        ForumChannelView(name: channel)
+                        ForumChannelView(channel: ChannelViewModel(channel: channel))
                   
                     } label: {
                         // The view
-                        Text(channel.uppercased())
+                        Text(channel.name.uppercased())
                             .bold()
                             .padding(.vertical)
                             .foregroundColor(.secondary)
