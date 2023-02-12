@@ -14,15 +14,15 @@ struct ForumChannelView: View {
   
     var body: some View {
         NavigationStack{
-            
+            ZStack (alignment: .bottomTrailing){
                 ScrollView {
-                   
+                    
                     
                     ForEach(channel.messages, id: \.self) { message in
                         VStack (alignment: .leading, spacing: 10) {
                             
                             MessageView(message: message)
-                           
+                            
                             NavigationLink {
                                 MessageRepliesView(message: message)
                             } label: {
@@ -32,25 +32,32 @@ struct ForumChannelView: View {
                         }
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding()
-              
+                        
                     }
-
-                }
-            Button {
-                showingSheet.toggle()
-            } label: {
-                HStack{
-                    Spacer()
-                    Image(systemName: "plus.circle.fill")
-                        .font(.system(size: 50))
-                        .foregroundColor(Color("app-blue"))
-                }
-                .padding()
                     
+                }
+               
+                    Button {
+                        showingSheet.toggle()
+                    } label: {
+                        
+                        Image(systemName: "plus.circle.fill")
+                            .font(.system(size: 50))
+                            .foregroundColor(Color("app-blue"))
+                            .padding()
+                        
+                        
+                        
+                    }
+                    .sheet(isPresented: $showingSheet) {
+                        NewPostView(vm: channel, showingSheet: $showingSheet)
+                    }
+                    
+                
+              
             }
-            .sheet(isPresented: $showingSheet) {
-                NewPostView(vm: channel, showingSheet: $showingSheet)
-            }
+        }
+            
             
             .navigationTitle(channel.name.capitalized)
 //            .toolbarBackground(
@@ -61,7 +68,7 @@ struct ForumChannelView: View {
             }
             
         }
-    }
+    
 
 
 
