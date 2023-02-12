@@ -25,7 +25,13 @@
 		243ABF5A299814D2007016A2 /* ResourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243ABF59299814D2007016A2 /* ResourcesView.swift */; };
 		243ABF5C299814DB007016A2 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243ABF5B299814DB007016A2 /* ProfileView.swift */; };
 		243ABF5E2998204E007016A2 /* ForumChannelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243ABF5D2998204E007016A2 /* ForumChannelView.swift */; };
+		3B04CEDE299860F500F1B86E /* HousingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B04CEDD299860F500F1B86E /* HousingView.swift */; };
+		3B04CEE02998AD5F00F1B86E /* TransportationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B04CEDF2998AD5F00F1B86E /* TransportationView.swift */; };
+		3B04CEE22998AFF500F1B86E /* GroceriesFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B04CEE12998AFF500F1B86E /* GroceriesFoodView.swift */; };
+		3B04CEE42998B12600F1B86E /* OtherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B04CEE32998B12600F1B86E /* OtherView.swift */; };
+
 		8B0B3CA329984FDE0043C972 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B3CA229984FDE0043C972 /* EditProfileView.swift */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,7 +54,14 @@
 		243ABF59299814D2007016A2 /* ResourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesView.swift; sourceTree = "<group>"; };
 		243ABF5B299814DB007016A2 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		243ABF5D2998204E007016A2 /* ForumChannelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumChannelView.swift; sourceTree = "<group>"; };
+
+		3B04CEDD299860F500F1B86E /* HousingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousingView.swift; sourceTree = "<group>"; };
+		3B04CEDF2998AD5F00F1B86E /* TransportationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportationView.swift; sourceTree = "<group>"; };
+		3B04CEE12998AFF500F1B86E /* GroceriesFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceriesFoodView.swift; sourceTree = "<group>"; };
+		3B04CEE32998B12600F1B86E /* OtherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherView.swift; sourceTree = "<group>"; };
+
 		8B0B3CA229984FDE0043C972 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +139,10 @@
 				243ABF1329980E09007016A2 /* ContentView.swift */,
 				240661742998353400976D8F /* Model.swift */,
 				243ABF57299814BE007016A2 /* BudgetView.swift */,
+				3B04CEDD299860F500F1B86E /* HousingView.swift */,
+				3B04CEDF2998AD5F00F1B86E /* TransportationView.swift */,
+				3B04CEE12998AFF500F1B86E /* GroceriesFoodView.swift */,
+				3B04CEE32998B12600F1B86E /* OtherView.swift */,
 				243ABF59299814D2007016A2 /* ResourcesView.swift */,
 				243ABF5B299814DB007016A2 /* ProfileView.swift */,
 				8B0B3CA229984FDE0043C972 /* EditProfileView.swift */,
@@ -221,7 +238,11 @@
 			files = (
 				243ABF1429980E09007016A2 /* ContentView.swift in Sources */,
 				243ABF58299814BE007016A2 /* BudgetView.swift in Sources */,
+
+				3B04CEE22998AFF500F1B86E /* GroceriesFoodView.swift in Sources */,
+
 				2406619C29991DE000976D8F /* MessageViewModel.swift in Sources */,
+
 				243ABF56299814AC007016A2 /* ForumView.swift in Sources */,
 				240661822998659000976D8F /* ForumViewModel.swift in Sources */,
 				2406619A299919DB00976D8F /* ReplyView.swift in Sources */,
@@ -235,6 +256,9 @@
 				243ABF5C299814DB007016A2 /* ProfileView.swift in Sources */,
 				243ABF5A299814D2007016A2 /* ResourcesView.swift in Sources */,
 				240661752998353400976D8F /* Model.swift in Sources */,
+				3B04CEE42998B12600F1B86E /* OtherView.swift in Sources */,
+				3B04CEE02998AD5F00F1B86E /* TransportationView.swift in Sources */,
+				3B04CEDE299860F500F1B86E /* HousingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
