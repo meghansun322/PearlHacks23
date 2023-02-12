@@ -57,7 +57,7 @@ struct ForumView: View {
         if searchQuery.isEmpty {
             return vm.channels
         } else {
-            return vm.channels.filter { $0.name.contains(searchQuery)}
+            return vm.channels.filter { $0.name.lowercased().contains(searchQuery.lowercased())}
         }
     }
     }
