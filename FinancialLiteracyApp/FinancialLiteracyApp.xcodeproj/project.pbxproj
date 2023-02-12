@@ -83,7 +83,6 @@
 		243ABF1029980E09007016A2 /* FinancialLiteracyApp */ = {
 			isa = PBXGroup;
 			children = (
-				8B0B3CA229984FDE0043C972 /* EditProfileView.swift */,
 				2406617C299847E000976D8F /* Forum */,
 				243ABF1129980E09007016A2 /* FinancialLiteracyAppApp.swift */,
 				243ABF1329980E09007016A2 /* ContentView.swift */,
@@ -91,6 +90,7 @@
 				243ABF57299814BE007016A2 /* BudgetView.swift */,
 				243ABF59299814D2007016A2 /* ResourcesView.swift */,
 				243ABF5B299814DB007016A2 /* ProfileView.swift */,
+				8B0B3CA229984FDE0043C972 /* EditProfileView.swift */,
 				243ABF1529980E0C007016A2 /* Assets.xcassets */,
 				243ABF1729980E0C007016A2 /* Preview Content */,
 			);
