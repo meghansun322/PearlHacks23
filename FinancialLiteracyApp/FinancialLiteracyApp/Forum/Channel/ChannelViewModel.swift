@@ -4,7 +4,6 @@
 //
 //  Created by Meghan Sun on 2/11/23.
 //
-
 import Foundation
 
 class ChannelViewModel: ObservableObject {
@@ -27,4 +26,3 @@ class ChannelViewModel: ObservableObject {
         self.model.messages.insert(new, at: 0)
     }
 }
-

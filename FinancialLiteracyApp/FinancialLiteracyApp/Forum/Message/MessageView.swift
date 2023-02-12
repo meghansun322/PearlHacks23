@@ -9,7 +9,7 @@ import SwiftUI
 
 // Component for any message
 struct MessageView: View {
-    @State var message: Message
+    @ObservedObject var message: MessageViewModel
     
     var body: some View {
         VStack (alignment: .leading, spacing: 5){
@@ -21,14 +21,14 @@ struct MessageView: View {
             
             HStack {
                 Button {
-                    if (!message.isUpVoted) {
-                        message.upvote += 1
+                    if (!message.isUpvoted) {
+                        message.increaseUpvote()
                        
                     } else {
-                        message.upvote -= 1
+                        message.decreaseUpvote()
                     }
                     
-                    message.isUpVoted.toggle()
+                    message.toggleUpvote()
                   
                    
                 } label: {
@@ -37,19 +37,19 @@ struct MessageView: View {
                         Text("\(message.upvote)")
                            
                     }
-                    .foregroundColor(message.isUpVoted ? .blue : .black)
-                    .fontWeight(message.isUpVoted ? .bold : .semibold)
+                    .foregroundColor(message.isUpvoted ? .blue : .black)
+                    .fontWeight(message.isUpvoted ? .bold : .semibold)
                 }
                
                 Button {
-                    if (!message.isDownVoted) {
-                        message.downvote += 1
+                    if (!message.isDownvoted) {
+                        message.increaseDownvote()
                        
                     } else {
-                        message.downvote -= 1
+                        message.decreaseDownvote()
                     }
                     
-                    message.isDownVoted.toggle()
+                   message.toggleDownvote()
                   
                    
                 } label: {
@@ -57,8 +57,8 @@ struct MessageView: View {
                         Image(systemName: "chevron.down.circle")
                         Text("\(message.downvote)")
                     }
-                    .foregroundColor(message.isDownVoted ? .blue : .black)
-                    .fontWeight(message.isDownVoted ? .bold : .semibold)
+                    .foregroundColor(message.isDownvoted ? .blue : .black)
+                    .fontWeight(message.isDownvoted ? .bold : .semibold)
                 }
                
  
@@ -73,6 +73,6 @@ struct MessageView: View {
 
 struct MessageView_Previews: PreviewProvider {
     static var previews: some View {
-        MessageView(message: Message.example_messages[0])
+        MessageView(message: MessageViewModel(message: Message.example_message))
     }
 }

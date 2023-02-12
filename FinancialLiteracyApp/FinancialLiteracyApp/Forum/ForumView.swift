@@ -16,10 +16,6 @@ struct ForumView: View {
     var body: some View {
         NavigationStack {
             VStack (alignment: .leading){
-                TextField("Search for a community...", text: $searchQuery)
-                    .foregroundColor(.black)
-                    .padding(.bottom)
-                
                 
                 Text("Communities")
                     .font(.title)
@@ -28,7 +24,7 @@ struct ForumView: View {
                 
                 ScrollView {
                     VStack (alignment: .leading){
-                        ForEach(vm.channels, id: \.self) { channel in
+                        ForEach(searchResults, id: \.self) { channel in
                             // On click, changes view to ForumChannel View
                             NavigationLink {
                                 ForumChannelView(channel: ChannelViewModel(channel: channel))
@@ -53,9 +49,20 @@ struct ForumView: View {
             }
             .padding()
             .navigationTitle("Forum")
+            .searchable(text: $searchQuery)
+            }
+        }
+    // Filters the channels by search query
+    var searchResults: [Channel] {
+        if searchQuery.isEmpty {
+            return vm.channels
+        } else {
+            return vm.channels.filter { $0.name.lowercased().contains(searchQuery.lowercased())}
         }
     }
-}
+    }
+    
+    
 
 struct ForumView_Previews: PreviewProvider {
     static var previews: some View {
