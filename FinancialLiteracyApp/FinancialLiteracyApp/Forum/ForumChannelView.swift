@@ -26,8 +26,9 @@ struct ForumChannelView: View {
                             NavigationLink {
                                 MessageRepliesView(message: message)
                             } label: {
-                                Text("view replies")
+                                Text("view replies").foregroundColor(Color("app-blue"))
                             }
+                            Divider()
                         }
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding()
@@ -42,6 +43,7 @@ struct ForumChannelView: View {
                     Spacer()
                     Image(systemName: "plus.circle.fill")
                         .font(.system(size: 50))
+                        .foregroundColor(Color("app-blue"))
                 }
                 .padding()
                     
@@ -50,7 +52,11 @@ struct ForumChannelView: View {
                 NewPostView(vm: channel, showingSheet: $showingSheet)
             }
             
-            .navigationTitle(channel.name.uppercased())
+            .navigationTitle(channel.name.capitalized)
+//            .toolbarBackground(
+//                            Color("app-green"),
+//                            for: .navigationBar)
+//            .toolbarBackground(.visible, for: .navigationBar)
                 
             }
             
