@@ -24,23 +24,23 @@ struct HousingView: View
                         
                         GroupBox {
                             DisclosureGroup("Rent") {
-                                HStack(spacing: 111){
+                                HStack(spacing: 120){
                                     Text("Total Projected Cost")
-                                    Text("$1,600")
+                                    Text("$750")
                                 }
                                 .font(.system(size: 20))
                                 .foregroundColor(Color(.black))
                                 
-                                HStack(spacing: 145){
+                                HStack(spacing: 150){
                                     Text("Total Actual Cost")
-                                    Text("$1,713")
+                                    Text("$750")
                                 }
                                 .font(.system(size: 20))
                                 .foregroundColor(Color(.black))
                                 
-                                HStack(spacing: 212){
+                                HStack(spacing: 230){
                                     Text("Difference")
-                                    Text("-$113")
+                                    Text("$0")
                                 }
                                 .font(.system(size: 20))
                                 .foregroundColor(Color(.black))
@@ -53,23 +53,23 @@ struct HousingView: View
                     
                         GroupBox {
                             DisclosureGroup("Electricity") {
-                                HStack(spacing: 111){
+                                HStack(spacing: 135){
                                     Text("Total Projected Cost")
-                                    Text("$1,600")
+                                    Text("$40")
                                 }
                                 .font(.system(size: 20))
                                 .foregroundColor(Color(.black))
                                 
-                                HStack(spacing: 145){
+                                HStack(spacing: 165){
                                     Text("Total Actual Cost")
-                                    Text("$1,713")
+                                    Text("$35")
                                 }
                                 .font(.system(size: 20))
                                 .foregroundColor(Color(.black))
                                 
-                                HStack(spacing: 212){
+                                HStack(spacing: 225){
                                     Text("Difference")
-                                    Text("-$113")
+                                    Text("+$5")
                                 }
                                 .font(.system(size: 20))
                                 .foregroundColor(Color(.black))
@@ -82,23 +82,23 @@ struct HousingView: View
                         
                         GroupBox {
                             DisclosureGroup("Water/Sewage") {
-                                HStack(spacing: 111){
+                                HStack(spacing: 125){
                                     Text("Total Projected Cost")
-                                    Text("$1,600")
+                                    Text("$20")
                                 }
                                 .font(.system(size: 20))
                                 .foregroundColor(Color(.black))
                                 
-                                HStack(spacing: 145){
+                                HStack(spacing: 155){
                                     Text("Total Actual Cost")
-                                    Text("$1,713")
+                                    Text("$22")
                                 }
                                 .font(.system(size: 20))
                                 .foregroundColor(Color(.black))
                                 
-                                HStack(spacing: 212){
+                                HStack(spacing: 215){
                                     Text("Difference")
-                                    Text("-$113")
+                                    Text("-$2")
                                 }
                                 .font(.system(size: 20))
                                 .foregroundColor(Color(.black))
@@ -113,21 +113,21 @@ struct HousingView: View
                             DisclosureGroup("Wi-Fi") {
                                 HStack(spacing: 111){
                                     Text("Total Projected Cost")
-                                    Text("$1,600")
+                                    Text("$20")
                                 }
                                 .font(.system(size: 20))
                                 .foregroundColor(Color(.black))
                                 
                                 HStack(spacing: 145){
                                     Text("Total Actual Cost")
-                                    Text("$1,713")
+                                    Text("$20")
                                 }
                                 .font(.system(size: 20))
                                 .foregroundColor(Color(.black))
                                 
                                 HStack(spacing: 212){
                                     Text("Difference")
-                                    Text("-$113")
+                                    Text("$0")
                                 }
                                 .font(.system(size: 20))
                                 .foregroundColor(Color(.black))
@@ -142,21 +142,21 @@ struct HousingView: View
                             DisclosureGroup("Trash") {
                                 HStack(spacing: 111){
                                     Text("Total Projected Cost")
-                                    Text("$1,600")
+                                    Text("$25")
                                 }
                                 .font(.system(size: 20))
                                 .foregroundColor(Color(.black))
                                 
                                 HStack(spacing: 145){
                                     Text("Total Actual Cost")
-                                    Text("$1,713")
+                                    Text("$25")
                                 }
                                 .font(.system(size: 20))
                                 .foregroundColor(Color(.black))
                                 
-                                HStack(spacing: 212){
+                                HStack(spacing: 215){
                                     Text("Difference")
-                                    Text("-$113")
+                                    Text("$0")
                                 }
                                 .font(.system(size: 20))
                                 .foregroundColor(Color(.black))
@@ -169,23 +169,23 @@ struct HousingView: View
                         
                         GroupBox {
                             DisclosureGroup("Maintenance") {
-                                HStack(spacing: 111){
+                                HStack(spacing: 138){
                                     Text("Total Projected Cost")
-                                    Text("$1,600")
+                                    Text("$30")
                                 }
                                 .font(.system(size: 20))
                                 .foregroundColor(Color(.black))
                                 
-                                HStack(spacing: 145){
+                                HStack(spacing: 180){
                                     Text("Total Actual Cost")
-                                    Text("$1,713")
+                                    Text("$0")
                                 }
                                 .font(.system(size: 20))
                                 .foregroundColor(Color(.black))
                                 
                                 HStack(spacing: 212){
                                     Text("Difference")
-                                    Text("-$113")
+                                    Text("+$30")
                                 }
                                 .font(.system(size: 20))
                                 .foregroundColor(Color(.black))
@@ -198,23 +198,23 @@ struct HousingView: View
                         
                         GroupBox {
                             DisclosureGroup("Other") {
-                                HStack(spacing: 111){
+                                HStack(spacing: 140){
                                     Text("Total Projected Cost")
-                                    Text("$1,600")
+                                    Text("$15")
                                 }
                                 .font(.system(size: 20))
                                 .foregroundColor(Color(.black))
                                 
-                                HStack(spacing: 145){
+                                HStack(spacing: 175){
                                     Text("Total Actual Cost")
-                                    Text("$1,713")
+                                    Text("$0")
                                 }
                                 .font(.system(size: 20))
                                 .foregroundColor(Color(.black))
                                 
                                 HStack(spacing: 212){
                                     Text("Difference")
-                                    Text("-$113")
+                                    Text("+$15")
                                 }
                                 .font(.system(size: 20))
                                 .foregroundColor(Color(.black))
@@ -232,22 +232,22 @@ struct HousingView: View
                 
                 VStack {
                     
-                    HStack(spacing: 125)
+                    HStack(spacing: 140)
                     {
                         Text("Total Projected Cost")
-                        Text("$1,600")
+                        Text("$900")
                     }
                     
-                    HStack(spacing: 159)
+                    HStack(spacing: 168)
                     {
                         Text("Total Actual Cost")
-                        Text("$1,713")
+                        Text("$852")
                     }
                     
                     HStack(spacing: 222)
                     {
                         Text("Difference")
-                        Text("-$113")
+                        Text("+$48")
                     }
                 }.font(.system(size: 20))
                 
@@ -266,6 +266,7 @@ struct HousingView: View
                                 .padding(.horizontal, 40)
                                 .background(Color("app-green"))
                                 .clipShape(Capsule())
+                                .shadow(color: .gray, radius: 5, x: -1, y: 3)
                     })
                 }
             }
