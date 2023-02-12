@@ -112,6 +112,17 @@
             ]
           },
           {
+            "user": "stocks-sadie3",
+            "message": "Use my link to get a Discover Student Credit Card! It has great cash back options. discover.com/sadieastudent",
+            "upvote": 7,
+            "downvote": 4,
+            "isUpvoted": false,
+            "isDownvoted": false,
+            "replies": [
+
+            ]
+          },
+          {
             "user": "money-meghan322",
             "message": "My paycheck just came in. Should I spend all of my money on Taylor Swift tickets?",
             "upvote": 1,
@@ -137,6 +148,18 @@
       },
       {
         "name": "Credit Cards 💳",
+        "messages": [
+
+        ]
+      },
+      {
+        "name": "Women + Non-Binary Folks 🤷",
+        "messages": [
+
+        ]
+      },
+      {
+        "name": "LGBTQ+ 🏳️‍🌈",
         "messages": [
 
         ]

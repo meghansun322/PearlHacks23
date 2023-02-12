@@ -229,16 +229,3 @@ struct Resource: View {
     }
         
 }
-
-struct Definition: View {
-    var title: String
-    var description: String
-    var body: some View {
-        VStack (alignment: .leading){
-            Text(title)
-                .font(.title2)
-            Text(description)
-                .font(.footnote)
-        }
-    }
-}
