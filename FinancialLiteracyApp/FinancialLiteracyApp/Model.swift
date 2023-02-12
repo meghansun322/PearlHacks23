@@ -12,17 +12,27 @@ struct Forum: Hashable {
     var channels: [Channel]
     
     static var example: [Channel] = [
-        Channel(name: "Investing", messages: [Message(user: "stocks_sadie3", message: "Who's checked the stock market today", upvote: 1, downvote: 23),
+        Channel(name: "Investing 📈", messages: [Message(user: "stocks_sadie3", message: "Who's checked the stock market today", upvote: 1, downvote: 23),
                                               Message(user: "clueless_claire342", message: "I want to invest in the stock market, but I don't know where to start. Please send help", upvote: 22, downvote: 0),
                                               Message(user: "expert_emily99", message: "I loved @Financial_Feminist Podcast! Super helpful and insightful. Please feel free to reach out to me whenever. #womensupportingwomen #womeninfintech", upvote: 40, downvote: 0)]) ,
         
-        Channel(name: "Budgeting", messages: [Message(user: "budget_bridget45", message: "Just spent some time personalizing my budget on College Wallet. This app is soooooo cool!!", upvote: 1, downvote: 23),
+        Channel(name: "Budgeting 😅", messages: [Message(user: "budget_bridget45", message: "Just spent some time personalizing my budget on College Wallet. This app is soooooo cool!!", upvote: 1, downvote: 23),
                                               Message(user: "clueless_claire342", message: "My paycheck just came in. Should I spend all of my money on Taylor Swift tickets?", upvote: 1, downvote: 10),
                                               Message(user: "silly_sophie1", message: "I dreamt that I won the lottery to only realize that I have no money. I need to start budgeting ASAP", upvote: 40, downvote: 0)]),
         
-        Channel(name: "General", messages: [Message(user: "extra_cash_erin131", message: "Just spent some time personalizing my budget on College Wallet. This app is soooooo cool!!", upvote: 1, downvote: 23),
+        Channel(name: "General 💲", messages: [Message(user: "extra_cash_erin131", message: "Just spent some time personalizing my budget on College Wallet. This app is soooooo cool!!", upvote: 1, downvote: 23),
                                               Message(user: "money_meghan322", message: "My paycheck just came in. Should I spend all of my money on Taylor Swift tickets?", upvote: 1, downvote: 10),
                                               Message(user: "silly_sophie1", message: "I dreamt that I won the lottery to only realize that I have no money. I need to start budgeting ASAP", upvote: 40, downvote: 0)]),
+        
+        Channel(name: "Credit Cards 💳", messages: []),
+        
+        Channel(name: "Deals 💰", messages: []),
+        
+        Channel(name: "Savings 💸", messages: []),
+        
+        Channel(name: "Recommendations 😎", messages: []),
+        
+        Channel(name: "Loans 😬", messages: [])
         
         
     ]

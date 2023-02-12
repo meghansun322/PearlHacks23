@@ -11,9 +11,8 @@ import SwiftUI
 struct ForumView: View {
     
     @StateObject var vm: ForumViewModel = ForumViewModel()
-    
     @State var searchQuery = ""
-    var channels = ["budgeting", "investing", "general"]
+  
     var body: some View {
         NavigationStack {
             VStack (alignment: .leading){
@@ -26,21 +25,26 @@ struct ForumView: View {
                     .font(.title)
                 
                 Divider()
-                ForEach(vm.channels, id: \.self) { channel in
-                    // On click, changes view to ForumChannel View
-                    NavigationLink {
-                        ForumChannelView(channel: ChannelViewModel(channel: channel))
-                  
-                    } label: {
-                        // The view
-                        Text(channel.name.uppercased())
-                            .bold()
-                            .padding(.vertical)
-                            .foregroundColor(.secondary)
-                          
+                
+                ScrollView {
+                    VStack (alignment: .leading){
+                        ForEach(vm.channels, id: \.self) { channel in
+                            // On click, changes view to ForumChannel View
+                            NavigationLink {
+                                ForumChannelView(channel: ChannelViewModel(channel: channel))
+                                
+                            } label: {
+                                // The view
+                                Text(channel.name.uppercased())
+                                    .bold()
+                                    .padding(.vertical)
+                                    .foregroundColor(.secondary)
+                                
+                            }
+                            Divider()
+                            
+                        }
                     }
-                    Divider()
-           
                 }
   
                 Spacer()
