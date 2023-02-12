@@ -1,4 +1,4 @@
-# College Wallet
+# College Wallet - Pearl Hacks 2023
 
 ## Inspiration
 We realized that as college students, a lot of us do not know much about financial literacy, or even just about efficiently managing our money. In addition, a gender gap exists when it comes to financial literacy. According to the U.S Department of Education, “ 3.8 million adult American women have a “below basic” level of financial literacy”. Money and personal finance is often considered taboo; with this, women and gender minorities are less likely to learn about personal finance, invest, etc. Because of this, we chose to implement identity-specific communities to empower women and non-binary people to learn about personal finance.
