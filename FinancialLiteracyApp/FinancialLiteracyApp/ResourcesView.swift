@@ -94,13 +94,12 @@ struct ResourcesView: View {
         }
     }
 
-
     var body: some View {
         NavigationStack {
             ScrollViewReader { value in
                 ScrollView {
-                    TextField("Search:", text: $name)
                     Text("Table of Contents")
+                        .id(0)
                         .font(.headline)
                     Button("Managing your Money") {
                         value.scrollTo(1)
@@ -130,20 +129,60 @@ struct ResourcesView: View {
                     VStack (alignment: .leading){
                         money
                             .id(1)
+                        
+                        HStack{
+                            Spacer()
+                            Button("Back to Top"){
+                                value.scrollTo(0)
+                            }
+                            Spacer()
+                        }
+                        
                         cards
                             .id(2)
+                        
+                        HStack{
+                            Spacer()
+                            Button("Back to Top"){
+                                value.scrollTo(0)
+                            }
+                            Spacer()
+                        }
                         loans
                             .id(3)
+                        
+                        HStack{
+                            Spacer()
+                            Button("Back to Top"){
+                                value.scrollTo(0)
+                            }
+                            Spacer()
+                        }
                         invest
                             .id(4)
+                        HStack{
+                            Spacer()
+                            Button("Back to Top"){
+                                value.scrollTo(0)
+                            }
+                            Spacer()
+                        }
                         miscellaneous
                             .id(5)
+                        HStack{
+                            Spacer()
+                            Button("Back to Top"){
+                                value.scrollTo(0)
+                            }
+                            Spacer()
+                        }
                     }
+
                 } .navigationTitle("Resources")
                     .padding()
             }
             
-            
+            .searchable(text: $name, prompt: "Search:")
         }
     }
 }
@@ -154,6 +193,7 @@ extension Color {
     struct UI {
          let blue = Color("app-blue")
         let green = Color("app-green")
+        let description = Color("description")
     }
 }
 struct ResourcesView_Previews: PreviewProvider {
@@ -181,7 +221,7 @@ struct Resource: View {
                     
                         Text(description)
                 .font(.subheadline)
-                            .foregroundColor(.black)
+                .foregroundColor(Color.ui.description)
                             .bold()
                     }
         .frame(maxWidth: .infinity, alignment: .leading)
