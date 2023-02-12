@@ -14,41 +14,59 @@ struct BlueButton: ButtonStyle {
             .background(Color("app-blue"))
             .foregroundColor(.white)
             .clipShape(Capsule())
+            .shadow(color: .gray, radius: 5, x: -1, y: 3)
     }
 }
 
 struct ProfileView: View {
+    @State private var showingSheet = false
     var body: some View {
-            NavigationStack{
+        NavigationStack{
+            VStack (spacing: 10){
+                Divider()
+                HStack{
+                    Text("Meghan Sun").font(.title)
+                    Spacer()
+                    Text("🔥57 points").font(.title2)
+                }
+                HStack{
+                    Text("@money-meghan322")
+                    Spacer()
+                }
                 VStack (spacing: 25){
-                    Divider()
-                    HStack{
-                        Text("Meghan Sun").font(.title)
-                        Spacer()
-                        Text("57 points").font(.title2)
-                    }
-                    Image("Meghan").resizable().scaledToFit().clipShape(Circle())
-    
+                    Image("Meghan").resizable().scaledToFit().clipShape(Circle()).shadow(color: Color("app-blue"), radius: 5, x: -2, y: 5)
+                    
                     VStack (alignment: .leading) {
-                        Text("Hi! I go to UNC and I'm currently interested in learning about personal finance, investing, and the financial literacy knowledge gap.")
+                        Text("Hi! 👋 I go to UNC and I'm currently interested in learning about personal finance, investing, and the financial literacy knowledge gap.")
                     }
                     Spacer()
-                    Button("Edit Profile") {
-                        // switch to edit profile view here
+                    Button {
+                        showingSheet.toggle()
+                    } label: {
+                        Text("Edit Profile")
                     }
-                    .buttonStyle(BlueButton())
-                        
-
+                    .padding()
                     
                 }
-                .navigationTitle("My Profile")
-                .padding()
+                
+                .sheet(isPresented: $showingSheet) {
+                    EditProfileView()
+                }
             }
+            .buttonStyle(BlueButton())
+            .navigationTitle("👤My Profile")
+            .padding()
+            
         }
-}
-
-struct ProfileView_Previews: PreviewProvider {
-    static var previews: some View {
-        ProfileView()
+        
+        
+        
+    }
+    
+    
+    struct ProfileView_Previews: PreviewProvider {
+        static var previews: some View {
+            ProfileView()
+        }
     }
 }

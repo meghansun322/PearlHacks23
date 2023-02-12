@@ -10,6 +10,12 @@
 		240661752998353400976D8F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240661742998353400976D8F /* Model.swift */; };
 		2406617929983E2200976D8F /* MessageRepliesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2406617829983E2200976D8F /* MessageRepliesView.swift */; };
 		2406617B2998478A00976D8F /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2406617A2998478A00976D8F /* MessageView.swift */; };
+		2406617E29984D6300976D8F /* NewPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2406617D29984D6300976D8F /* NewPostView.swift */; };
+		240661802998611A00976D8F /* ChannelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2406617F2998611A00976D8F /* ChannelViewModel.swift */; };
+		240661822998659000976D8F /* ForumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240661812998659000976D8F /* ForumViewModel.swift */; };
+		2406618829988E8900976D8F /* college-wallet-data.json in Resources */ = {isa = PBXBuildFile; fileRef = 2406618729988E8900976D8F /* college-wallet-data.json */; };
+		2406619A299919DB00976D8F /* ReplyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24066199299919DB00976D8F /* ReplyView.swift */; };
+		2406619C29991DE000976D8F /* MessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2406619B29991DE000976D8F /* MessageViewModel.swift */; };
 		243ABF1229980E09007016A2 /* FinancialLiteracyAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243ABF1129980E09007016A2 /* FinancialLiteracyAppApp.swift */; };
 		243ABF1429980E09007016A2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243ABF1329980E09007016A2 /* ContentView.swift */; };
 		243ABF1629980E0C007016A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 243ABF1529980E0C007016A2 /* Assets.xcassets */; };
@@ -23,12 +29,21 @@
 		3B04CEE02998AD5F00F1B86E /* TransportationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B04CEDF2998AD5F00F1B86E /* TransportationView.swift */; };
 		3B04CEE22998AFF500F1B86E /* GroceriesFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B04CEE12998AFF500F1B86E /* GroceriesFoodView.swift */; };
 		3B04CEE42998B12600F1B86E /* OtherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B04CEE32998B12600F1B86E /* OtherView.swift */; };
+
+		8B0B3CA329984FDE0043C972 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B3CA229984FDE0043C972 /* EditProfileView.swift */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		240661742998353400976D8F /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		2406617829983E2200976D8F /* MessageRepliesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRepliesView.swift; sourceTree = "<group>"; };
 		2406617A2998478A00976D8F /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		2406617D29984D6300976D8F /* NewPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostView.swift; sourceTree = "<group>"; };
+		2406617F2998611A00976D8F /* ChannelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelViewModel.swift; sourceTree = "<group>"; };
+		240661812998659000976D8F /* ForumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumViewModel.swift; sourceTree = "<group>"; };
+		2406618729988E8900976D8F /* college-wallet-data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "college-wallet-data.json"; sourceTree = "<group>"; };
+		24066199299919DB00976D8F /* ReplyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyView.swift; sourceTree = "<group>"; };
+		2406619B29991DE000976D8F /* MessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewModel.swift; sourceTree = "<group>"; };
 		243ABF0E29980E09007016A2 /* FinancialLiteracyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinancialLiteracyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		243ABF1129980E09007016A2 /* FinancialLiteracyAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancialLiteracyAppApp.swift; sourceTree = "<group>"; };
 		243ABF1329980E09007016A2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -39,10 +54,14 @@
 		243ABF59299814D2007016A2 /* ResourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesView.swift; sourceTree = "<group>"; };
 		243ABF5B299814DB007016A2 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		243ABF5D2998204E007016A2 /* ForumChannelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumChannelView.swift; sourceTree = "<group>"; };
+
 		3B04CEDD299860F500F1B86E /* HousingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousingView.swift; sourceTree = "<group>"; };
 		3B04CEDF2998AD5F00F1B86E /* TransportationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportationView.swift; sourceTree = "<group>"; };
 		3B04CEE12998AFF500F1B86E /* GroceriesFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceriesFoodView.swift; sourceTree = "<group>"; };
 		3B04CEE32998B12600F1B86E /* OtherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherView.swift; sourceTree = "<group>"; };
+
+		8B0B3CA229984FDE0043C972 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +78,41 @@
 		2406617C299847E000976D8F /* Forum */ = {
 			isa = PBXGroup;
 			children = (
+				2406619D299925AE00976D8F /* Message */,
+				2406619E299925BC00976D8F /* Channel */,
+				2406619F299925E500976D8F /* Replies */,
+				2406617D29984D6300976D8F /* NewPostView.swift */,
 				243ABF55299814AC007016A2 /* ForumView.swift */,
-				243ABF5D2998204E007016A2 /* ForumChannelView.swift */,
-				2406617829983E2200976D8F /* MessageRepliesView.swift */,
-				2406617A2998478A00976D8F /* MessageView.swift */,
+				240661812998659000976D8F /* ForumViewModel.swift */,
 			);
 			path = Forum;
+			sourceTree = "<group>";
+		};
+		2406619D299925AE00976D8F /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				2406617A2998478A00976D8F /* MessageView.swift */,
+				2406619B29991DE000976D8F /* MessageViewModel.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		2406619E299925BC00976D8F /* Channel */ = {
+			isa = PBXGroup;
+			children = (
+				243ABF5D2998204E007016A2 /* ForumChannelView.swift */,
+				2406617F2998611A00976D8F /* ChannelViewModel.swift */,
+			);
+			path = Channel;
+			sourceTree = "<group>";
+		};
+		2406619F299925E500976D8F /* Replies */ = {
+			isa = PBXGroup;
+			children = (
+				24066199299919DB00976D8F /* ReplyView.swift */,
+				2406617829983E2200976D8F /* MessageRepliesView.swift */,
+			);
+			path = Replies;
 			sourceTree = "<group>";
 		};
 		243ABF0529980E09007016A2 = {
@@ -97,6 +145,8 @@
 				3B04CEE32998B12600F1B86E /* OtherView.swift */,
 				243ABF59299814D2007016A2 /* ResourcesView.swift */,
 				243ABF5B299814DB007016A2 /* ProfileView.swift */,
+				8B0B3CA229984FDE0043C972 /* EditProfileView.swift */,
+				2406618729988E8900976D8F /* college-wallet-data.json */,
 				243ABF1529980E0C007016A2 /* Assets.xcassets */,
 				243ABF1729980E0C007016A2 /* Preview Content */,
 			);
@@ -127,6 +177,8 @@
 			dependencies = (
 			);
 			name = FinancialLiteracyApp;
+			packageProductDependencies = (
+			);
 			productName = FinancialLiteracyApp;
 			productReference = 243ABF0E29980E09007016A2 /* FinancialLiteracyApp.app */;
 			productType = "com.apple.product-type.application";
@@ -155,6 +207,8 @@
 				Base,
 			);
 			mainGroup = 243ABF0529980E09007016A2;
+			packageReferences = (
+			);
 			productRefGroup = 243ABF0F29980E09007016A2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -169,6 +223,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2406618829988E8900976D8F /* college-wallet-data.json in Resources */,
 				243ABF1929980E0C007016A2 /* Preview Assets.xcassets in Resources */,
 				243ABF1629980E0C007016A2 /* Assets.xcassets in Resources */,
 			);
@@ -183,10 +238,19 @@
 			files = (
 				243ABF1429980E09007016A2 /* ContentView.swift in Sources */,
 				243ABF58299814BE007016A2 /* BudgetView.swift in Sources */,
+
 				3B04CEE22998AFF500F1B86E /* GroceriesFoodView.swift in Sources */,
+
+				2406619C29991DE000976D8F /* MessageViewModel.swift in Sources */,
+
 				243ABF56299814AC007016A2 /* ForumView.swift in Sources */,
+				240661822998659000976D8F /* ForumViewModel.swift in Sources */,
+				2406619A299919DB00976D8F /* ReplyView.swift in Sources */,
+				8B0B3CA329984FDE0043C972 /* EditProfileView.swift in Sources */,
 				243ABF1229980E09007016A2 /* FinancialLiteracyAppApp.swift in Sources */,
 				2406617929983E2200976D8F /* MessageRepliesView.swift in Sources */,
+				2406617E29984D6300976D8F /* NewPostView.swift in Sources */,
+				240661802998611A00976D8F /* ChannelViewModel.swift in Sources */,
 				2406617B2998478A00976D8F /* MessageView.swift in Sources */,
 				243ABF5E2998204E007016A2 /* ForumChannelView.swift in Sources */,
 				243ABF5C299814DB007016A2 /* ProfileView.swift in Sources */,

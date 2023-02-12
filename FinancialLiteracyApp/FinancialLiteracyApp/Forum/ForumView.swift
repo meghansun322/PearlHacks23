@@ -9,44 +9,60 @@ import SwiftUI
 
 // Displays the channels
 struct ForumView: View {
+    
+    @StateObject var vm: ForumViewModel = ForumViewModel()
     @State var searchQuery = ""
-    var channels = ["budgeting", "investing", "general"]
+  
     var body: some View {
         NavigationStack {
             VStack (alignment: .leading){
-                TextField("Search for a community...", text: $searchQuery)
-                    .foregroundColor(.black)
-                    .padding(.bottom)
-                
                 
                 Text("Communities")
                     .font(.title)
                 
                 Divider()
-                ForEach(channels, id: \.self) { channel in
-                    // On click, changes view to ForumChannel View
-                    NavigationLink {
-                        ForumChannelView(name: channel)
-                  
-                    } label: {
-                        // The view
-                        Text(channel.uppercased())
-                            .bold()
-                            .padding(.vertical)
-                            .foregroundColor(.secondary)
-                          
+                
+                ScrollView {
+                    VStack (alignment: .leading){
+                        ForEach(searchResults, id: \.self) { channel in
+                            // On click, changes view to ForumChannel View
+                            NavigationLink {
+                                ForumChannelView(channel: ChannelViewModel(channel: channel))
+                                
+                            } label: {
+                                // The view
+                                Text(channel.name.uppercased())
+                                    .bold()
+                                    .padding(.vertical)
+                                    .foregroundColor(.secondary)
+                                
+                            }
+                            Divider()
+                            
+                        }
                     }
-                    Divider()
-           
                 }
   
                 Spacer()
+                
+              
             }
             .padding()
             .navigationTitle("Forum")
+            .searchable(text: $searchQuery)
+            }
+        }
+    // Filters the channels by search query
+    var searchResults: [Channel] {
+        if searchQuery.isEmpty {
+            return vm.channels
+        } else {
+            return vm.channels.filter { $0.name.lowercased().contains(searchQuery.lowercased())}
         }
     }
-}
+    }
+    
+    
 
 struct ForumView_Previews: PreviewProvider {
     static var previews: some View {
