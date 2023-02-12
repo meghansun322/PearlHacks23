@@ -50,7 +50,7 @@ struct OvalTextFieldStyle: TextFieldStyle {
     
 struct MessageRepliesView_Previews: PreviewProvider {
     static var previews: some View {
-        MessageRepliesView(message: Message.example_messages[0])
+        MessageRepliesView(message: Message.example_message)
     }
 }
 }

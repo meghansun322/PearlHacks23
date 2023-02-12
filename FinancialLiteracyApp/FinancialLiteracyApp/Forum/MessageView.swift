@@ -21,14 +21,14 @@ struct MessageView: View {
             
             HStack {
                 Button {
-                    if (!message.isUpVoted) {
+                    if (!message.isUpvoted) {
                         message.upvote += 1
                        
                     } else {
                         message.upvote -= 1
                     }
                     
-                    message.isUpVoted.toggle()
+                    message.isUpvoted.toggle()
                   
                    
                 } label: {
@@ -37,19 +37,19 @@ struct MessageView: View {
                         Text("\(message.upvote)")
                            
                     }
-                    .foregroundColor(message.isUpVoted ? .blue : .black)
-                    .fontWeight(message.isUpVoted ? .bold : .semibold)
+                    .foregroundColor(message.isUpvoted ? .blue : .black)
+                    .fontWeight(message.isUpvoted ? .bold : .semibold)
                 }
                
                 Button {
-                    if (!message.isDownVoted) {
+                    if (!message.isDownvoted) {
                         message.downvote += 1
                        
                     } else {
                         message.downvote -= 1
                     }
                     
-                    message.isDownVoted.toggle()
+                    message.isDownvoted.toggle()
                   
                    
                 } label: {
@@ -57,8 +57,8 @@ struct MessageView: View {
                         Image(systemName: "chevron.down.circle")
                         Text("\(message.downvote)")
                     }
-                    .foregroundColor(message.isDownVoted ? .blue : .black)
-                    .fontWeight(message.isDownVoted ? .bold : .semibold)
+                    .foregroundColor(message.isDownvoted ? .blue : .black)
+                    .fontWeight(message.isDownvoted ? .bold : .semibold)
                 }
                
  
@@ -73,6 +73,6 @@ struct MessageView: View {
 
 struct MessageView_Previews: PreviewProvider {
     static var previews: some View {
-        MessageView(message: Message.example_messages[0])
+        MessageView(message: Message.example_message)
     }
 }

@@ -25,7 +25,7 @@ struct NewPostView: View {
                 
               
                     Button {
-                        vm.addNewMessage(new: (Message(user: "money-meghan322", message: theMessage, upvote: 0, downvote: 0)))
+                        vm.addNewMessage(new: (Message(user: "money-meghan322", message: theMessage, upvote: 0, downvote: 0, isUpvoted: false, isDownvoted: false)))
                         showingSheet = false
                     } label: {
                         Text("Post!")
