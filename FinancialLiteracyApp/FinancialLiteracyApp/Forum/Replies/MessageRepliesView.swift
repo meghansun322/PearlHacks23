@@ -10,7 +10,8 @@ import SwiftUI
 // View of Selected Message and it's replies
 struct MessageRepliesView: View {
     @State var user_reply: String = ""
-    var message: Message
+    
+    @ObservedObject var message: MessageViewModel
     
     var body: some View {
   
@@ -22,17 +23,33 @@ struct MessageRepliesView: View {
                 Text("Replies")
                     .font(.title2)
                 
-                ForEach(Message.example_replies, id: \.self) { reply in
-                    MessageView(message: reply)
-                }
+                replies
                 
                 Spacer()
                 TextField("Add a reply...", text: $user_reply).textFieldStyle(RoundedBorderTextFieldStyle())
+                    .onSubmit{
+                        message.addNewReply(new: Reply(user: "money-meghan322", message: user_reply))
+                        user_reply = "'"
+                    }
             }
             .navigationBarTitle("", displayMode: .inline) // remove spacing for title
             .padding()
             
         }
+    
+    var replies: some View {
+        
+        VStack (alignment: .leading, spacing: 10){
+            if (message.replies.isEmpty){
+                Text("No Replies")
+                    .foregroundColor(.secondary)
+            } else {
+                ForEach(message.replies, id: \.self) { reply in
+                    ReplyView(reply: reply)
+                }
+            }
+        }
+    }
     
         
 }
@@ -50,7 +67,7 @@ struct OvalTextFieldStyle: TextFieldStyle {
     
 struct MessageRepliesView_Previews: PreviewProvider {
     static var previews: some View {
-        MessageRepliesView(message: Message.example_message)
+        MessageRepliesView(message:MessageViewModel(message:  Message.example_message))
     }
 }
 }

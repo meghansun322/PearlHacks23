@@ -9,7 +9,7 @@ import SwiftUI
 
 // Component for any message
 struct MessageView: View {
-    @State var message: Message
+    @ObservedObject var message: MessageViewModel
     
     var body: some View {
         VStack (alignment: .leading, spacing: 5){
@@ -22,13 +22,13 @@ struct MessageView: View {
             HStack {
                 Button {
                     if (!message.isUpvoted) {
-                        message.upvote += 1
+                        message.increaseUpvote()
                        
                     } else {
-                        message.upvote -= 1
+                        message.decreaseUpvote()
                     }
                     
-                    message.isUpvoted.toggle()
+                    message.toggleUpvote()
                   
                    
                 } label: {
@@ -43,13 +43,13 @@ struct MessageView: View {
                
                 Button {
                     if (!message.isDownvoted) {
-                        message.downvote += 1
+                        message.increaseDownvote()
                        
                     } else {
-                        message.downvote -= 1
+                        message.decreaseDownvote()
                     }
                     
-                    message.isDownvoted.toggle()
+                   message.toggleDownvote()
                   
                    
                 } label: {
@@ -73,6 +73,6 @@ struct MessageView: View {
 
 struct MessageView_Previews: PreviewProvider {
     static var previews: some View {
-        MessageView(message: Message.example_message)
+        MessageView(message: MessageViewModel(message: Message.example_message))
     }
 }
