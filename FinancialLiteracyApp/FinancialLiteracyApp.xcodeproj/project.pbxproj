@@ -29,8 +29,8 @@
 		3B04CEE02998AD5F00F1B86E /* TransportationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B04CEDF2998AD5F00F1B86E /* TransportationView.swift */; };
 		3B04CEE22998AFF500F1B86E /* GroceriesFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B04CEE12998AFF500F1B86E /* GroceriesFoodView.swift */; };
 		3B04CEE42998B12600F1B86E /* OtherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B04CEE32998B12600F1B86E /* OtherView.swift */; };
-
 		8B0B3CA329984FDE0043C972 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B3CA229984FDE0043C972 /* EditProfileView.swift */; };
+		A6AA798229991DF8001FCADE /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AA798129991DF8001FCADE /* SplashScreenView.swift */; };
 
 /* End PBXBuildFile section */
 
@@ -61,6 +61,8 @@
 		3B04CEE32998B12600F1B86E /* OtherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherView.swift; sourceTree = "<group>"; };
 
 		8B0B3CA229984FDE0043C972 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		A6AA79802998ADF9001FCADE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A6AA798129991DF8001FCADE /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 
 /* End PBXFileReference section */
 
@@ -134,9 +136,11 @@
 		243ABF1029980E09007016A2 /* FinancialLiteracyApp */ = {
 			isa = PBXGroup;
 			children = (
+				A6AA79802998ADF9001FCADE /* Info.plist */,
 				2406617C299847E000976D8F /* Forum */,
 				243ABF1129980E09007016A2 /* FinancialLiteracyAppApp.swift */,
 				243ABF1329980E09007016A2 /* ContentView.swift */,
+				A6AA798129991DF8001FCADE /* SplashScreenView.swift */,
 				240661742998353400976D8F /* Model.swift */,
 				243ABF57299814BE007016A2 /* BudgetView.swift */,
 				3B04CEDD299860F500F1B86E /* HousingView.swift */,
@@ -238,9 +242,8 @@
 			files = (
 				243ABF1429980E09007016A2 /* ContentView.swift in Sources */,
 				243ABF58299814BE007016A2 /* BudgetView.swift in Sources */,
-
+				A6AA798229991DF8001FCADE /* SplashScreenView.swift in Sources */,
 				3B04CEE22998AFF500F1B86E /* GroceriesFoodView.swift in Sources */,
-
 				2406619C29991DE000976D8F /* MessageViewModel.swift in Sources */,
 
 				243ABF56299814AC007016A2 /* ForumView.swift in Sources */,
@@ -389,6 +392,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"FinancialLiteracyApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FinancialLiteracyApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "College Wallet";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -418,6 +422,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"FinancialLiteracyApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FinancialLiteracyApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "College Wallet";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
