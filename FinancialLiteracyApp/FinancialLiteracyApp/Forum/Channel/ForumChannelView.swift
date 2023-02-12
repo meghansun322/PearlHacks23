@@ -24,10 +24,10 @@ struct ForumChannelView: View {
                         ForEach(searchResults, id: \.self) { message in
                             VStack (alignment: .leading, spacing: 10) {
                                 
-                                MessageView(message: message)
+                                MessageView(message: MessageViewModel(message: message))
                                 
                                 NavigationLink {
-                                    MessageRepliesView(message: message)
+                                    MessageRepliesView(message: MessageViewModel(message: message))
                                 } label: {
                                     Text("view replies").foregroundColor(Color("app-blue"))
                                 }
