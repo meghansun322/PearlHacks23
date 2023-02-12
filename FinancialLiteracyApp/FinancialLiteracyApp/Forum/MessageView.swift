@@ -15,7 +15,7 @@ struct MessageView: View {
         VStack (alignment: .leading, spacing: 5){
          
             Text(message.user)
-                .bold()
+                .bold().font(.title3)
             Text(message.message)
             
             
